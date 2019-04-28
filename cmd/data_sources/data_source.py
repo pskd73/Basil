@@ -1,6 +1,6 @@
 from abc import abstractmethod, ABC
 
-from cmd.snapshot import SnapshotData
+from snapshot import SnapshotData
 
 
 class DataSource(ABC):
