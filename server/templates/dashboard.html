@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block body %}
+<h3>Timeline</h3>
+<div id="timeline"></div>
+<script>
+        fetch('/get_viz/timeline')
+            .then(function(response) { return response.json(); })
+            .then(function(item) { Bokeh.embed.embed_item(item); })
+
+</script>
+<h3>Apps</h3>
+<div id="per_app_usage"></div>
+<script>
+        fetch('/get_viz/per_app_usage')
+            .then(function(response) { return response.json(); })
+            .then(function(item) { Bokeh.embed.embed_item(item); })
+
+</script>
+{% endblock %}

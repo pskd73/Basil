@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basil</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.2.min.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.pydata.org/bokeh/release/bokeh-tables-1.0.2.min.css" rel="stylesheet" type="text/css"/>
+
+    <script src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-1.0.2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.pydata.org/bokeh/release/bokeh-tables-1.0.2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.pydata.org/bokeh/release/bokeh-gl-1.0.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+
+    </script>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <a class="brand-logo" href="#" style="padding-left: 5px;">Basil</a>
+        <ul class="right hide-on-med-and-down" id="nav-mobile">
+            <li><a href="/">Dashboard</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    {% block body %}
+    {% endblock %}
+</div>
+</body>
+</html>
